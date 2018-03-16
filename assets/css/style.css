@@ -1,0 +1,64 @@
+body {
+    background-image: url("../images/bg.jpg");
+    background-repeat: repeat;
+    background-attachment: scroll;
+    background-color: #000;
+    width: 100%;
+    
+    
+
+
+}
+
+.header {
+    margin-top: 0px;
+    text-align: center;
+    width: 100%;
+    background-color: #000;
+}
+
+.image {
+    background-image:url("../images/hamiltonstar.png");
+    position: relative;
+    background-repeat:no-repeat;
+    margin: 10px 300px;
+    padding: 10px;
+    width: 820px;
+    height: 520px;
+}
+
+.whitebox {
+    position: relative;
+    margin: 30px auto;
+    width: 500px;
+    height: 350px;
+    border: 0px #000 solid;
+    color: #fff;
+    z-index: 2;
+    overflow: auto;
+}
+.music {
+    position: relative;
+    width: 300px;
+    height: auto;
+    margin: 0px auto;
+}
+h1 {
+    color: #fff;
+    font-size: 9.5vw;
+    font-family: 'Cinzel', serif;
+}
+h2 {
+    margin-top: -10px;
+    font-size: 2vw;
+    color: #d49e3e;
+    font-family: 'Crimson Text', serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        background-image: url("../images/verticlebg.png");
+    }
+}
