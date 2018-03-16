@@ -17,19 +17,19 @@ body {
     background-color: #000;
 }
 
-.image {
-    background-image:url("../images/hamiltonstar.png");
-    position: relative;
-    background-repeat:no-repeat;
-    margin: 10px 300px;
+.starbox {
+   width: 100%;
+    margin: 10px auto;
     padding: 10px;
-    width: 820px;
-    height: 520px;
 }
-
+.hamilstar {
+    margin: 0px auto;
+    display: block;
+    width: auto;
+}
 .whitebox {
     position: relative;
-    margin: 30px auto;
+    margin: -460px auto;
     width: 500px;
     height: 350px;
     border: 0px #000 solid;
@@ -41,7 +41,7 @@ body {
     position: relative;
     width: 300px;
     height: auto;
-    margin: 0px auto;
+    margin: 450px auto;
 }
 h1 {
     color: #fff;
