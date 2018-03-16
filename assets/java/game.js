@@ -3,63 +3,65 @@ var triviaQuestions = [{
 	question: "Question?",
 	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
 	answer: 1
-},{
-	question: "Question?",
-	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
-	answer: 0
-},{
-	question: "Question?",
-	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
-	answer: 0
-},{
-	question: "Question?",
-	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
-	answer: 2
-},{
-	question: "Question?",
-	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
-	answer: 3
-},{
-	question: "Question?",
-	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
-	answer: 0
-},{
-	question: "Question?",
-	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
-	answer: 1
-},{
-	question: "Question?",
-	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
-	answer: 2
-},{
-	question: "Question?",
-	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
-	answer: 1
-},{
-	question: "Question?",
-	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
-	answer: 2
-},{
-	question: "Question?",
-	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
-	answer: 1
-},{
-	question: "Question?",
-	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
-	answer: 3
-},{
-	question: "Question?",
-	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
-	answer: 1
-},{
-	question: "Question?",
-	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
-	answer: 2
-},{
-	question: "Question?",
-	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
-	answer: 0
-}];
+}
+// ,{
+// 	question: "Question?",
+// 	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
+// 	answer: 0
+// },{
+// 	question: "Question?",
+// 	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
+// 	answer: 0
+// },{
+// 	question: "Question?",
+// 	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
+// 	answer: 2
+// },{
+// 	question: "Question?",
+// 	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
+// 	answer: 3
+// },{
+// 	question: "Question?",
+// 	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
+// 	answer: 0
+// },{
+// 	question: "Question?",
+// 	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
+// 	answer: 1
+// },{
+// 	question: "Question?",
+// 	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
+// 	answer: 2
+// },{
+// 	question: "Question?",
+// 	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
+// 	answer: 1
+// },{
+// 	question: "Question?",
+// 	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
+// 	answer: 2
+// },{
+// 	question: "Question?",
+// 	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
+// 	answer: 1
+// },{
+// 	question: "Question?",
+// 	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
+// 	answer: 3
+// },{
+// 	question: "Question?",
+// 	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
+// 	answer: 1
+// },{
+// 	question: "Question?",
+// 	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
+// 	answer: 2
+// },{
+// 	question: "Question?",
+// 	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
+// 	answer: 0
+// }
+];
 
 var currentQuestion; 
 var correctAnswer; 

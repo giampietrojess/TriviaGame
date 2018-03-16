@@ -71,13 +71,16 @@ h2 {
 
 #startOverBtn {
     background-color: #a16526;
-    vertical-align: middle;
-    line-height: 1.5;
+    line-height: 40px;
     cursor: pointer;
+    width: 150px;
+    margin: 40px auto;
+    align-content: center;
+
 }
 
 /* Smartphones */
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 300px) {
     body {
         background-image: url("../images/verticlebg.png");
     }
