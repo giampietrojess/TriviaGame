@@ -169,7 +169,8 @@ function answerPage(){
         $('#correctedAnswer').html('The correct answer was:<br> ' + rightAnswerText);
     // If User Runs Out of Time
 	} else{
-		unanswered++;
+        // Add one to the unanswered score at the end of the game
+        unanswered++;
 		$('#message').html(resultMessages.endTime);
 		$('#correctedAnswer').html('The correct answer was:<br> ' + rightAnswerText);
 		answered = true;
