@@ -40,18 +40,29 @@ body {
     height: 100px;
     margin: 450px auto;
 }
+#timeLeft {
+    margin-top: 10px;
+}
+
 h1 {
     color: #fff;
     font-size: 9.5vw;
     font-family: 'Cinzel', serif;
 }
 h2 {
-    margin-top: -10px;
     font-size: 2vw;
     color: #d49e3e;
     font-family: 'Crimson Text', serif;
     text-transform: uppercase;
     letter-spacing: 2px;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: 1.5vw;
+    color: #ccc;
+    font-family: 'Crimson Text', serif;
+    text-transform: uppercase;
     padding-bottom: 10px;
 }
 
@@ -73,7 +84,7 @@ h2 {
     background-color: #a16526;
     line-height: 40px;
     cursor: pointer;
-    width: 150px;
+    width: 125px;
     margin: 40px auto;
     align-content: center;
 

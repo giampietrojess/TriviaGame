@@ -1,67 +1,4 @@
 // Declare Everything
-var triviaQuestions = [{
-	question: "Question?",
-	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
-	answer: 1
-}
-// ,{
-// 	question: "Question?",
-// 	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
-// 	answer: 0
-// },{
-// 	question: "Question?",
-// 	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
-// 	answer: 0
-// },{
-// 	question: "Question?",
-// 	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
-// 	answer: 2
-// },{
-// 	question: "Question?",
-// 	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
-// 	answer: 3
-// },{
-// 	question: "Question?",
-// 	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
-// 	answer: 0
-// },{
-// 	question: "Question?",
-// 	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
-// 	answer: 1
-// },{
-// 	question: "Question?",
-// 	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
-// 	answer: 2
-// },{
-// 	question: "Question?",
-// 	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
-// 	answer: 1
-// },{
-// 	question: "Question?",
-// 	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
-// 	answer: 2
-// },{
-// 	question: "Question?",
-// 	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
-// 	answer: 1
-// },{
-// 	question: "Question?",
-// 	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
-// 	answer: 3
-// },{
-// 	question: "Question?",
-// 	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
-// 	answer: 1
-// },{
-// 	question: "Question?",
-// 	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
-// 	answer: 2
-// },{
-// 	question: "Question?",
-// 	answerList: ["A: Choice one", "B: Choice Two", "C: Choice Three", "D: Choice Four"],
-// 	answer: 0
-// }
-];
 
 var currentQuestion; 
 var correctAnswer; 
@@ -72,15 +9,62 @@ var time;
 var answered; 
 var userSelect;
 
-var messages = {
-	correct: "Maaaaan, you're nonstop!",
-	incorrect: "No, that's not it.",
-	endTime: "You should learn how to answer trivia questions like you're running out of time.... because you ran out of time!",
-	finished: "Done! What's your legacy? Let's see!"
+// Trivia Questions
+
+var triviaQuestions = [{
+	question: "What are the names of the three Schuyler sisters?",
+	multipleChoice: ["A: Angela, Eliza, Peggy", "B: Angela, Elaina, Patty", "C: Angelica, Eliza, Peggy", "D: Angelica, Eliza, Patty"],
+    answer: 2},
+    {
+    question: "Actor Daveed Diggs plays two different roles in Hamilton. In Act One, he portrays Marquis de Lafayette. Who does he portray in Act Two?",
+	multipleChoice: ["A: Phillip Hamilton", "B: Thomas Jefferson", "C: James Madison", "D: George Washington"],
+    answer: 1},
+    {
+    question: "What is the Eigth Duel Commandment?",
+	multipleChoice: ["A: Confess your sins", "B: Send in the seconds to negotiate peace", "C: Duel before the sun is in the sky", "D: Choose a friend to act as your second"],
+    answer: 1},
+    {
+    question: "In the song 'The Room Where it Happens', how was Aaron Burr involved in the agreement between Alexander Hamilton, Thomas Jefferson, and James Madison?",
+	multipleChoice: ["A: He convinced the three to sit down together for negotiations.", "B: He asked James Madison to advocate for Washington D.C. as the nation’s capital.", "C: He told Alexander Hamilton that an agreement needed to be reached.", "D: He wasn’t."],
+    answer: 3},
+    {
+	question: "Who wrote the Reynolds Pamphlet?",
+	multipleChoice: ["A: James Reynolds", "B: Maria Reynolds", "C: Alexander Hamilton", "D: Eliza Schuyler"],
+	answer: 2},
+    {
+	question: "Who is Phillip Hamilton seeking in 'Blow us All Away' to get an apology for insulting his father?", 
+	multipleChoice: ["A: John Laurens", "B: Aaron Burr", "C: George Eacker", "D: Nathaniel Pendleton"],
+	answer: 2},
+    {
+	question: "According to 'Who lives, Who Dies, Who Tells Your Story', which of Eliza's many accomplishments after Hamilton's death was she most proud?",
+	multipleChoice: ["A: Establishing the first private orphanage in NYC", "B: Raising funds in D.C for the Washington Monument", "C: Speaking out against slavery", "D: Interviewing every solider that fought by Hamiton's side"],
+	answer: 0},
+    {
+	question: "Which actor portrayed Alexander Hamilton on opening night?",
+	multipleChoice: ["A: Lin Manuel Miranda", "B: Leslie Odom Jr.", "C: Javier Muñoz", "D: Miguel Cervantes"],
+    answer: 0},
+    {
+	question: "Which actor has not portrayed King George on broadway in Hamilton?",
+	multipleChoice: ["A: Andrew Rannells", "B: Jonathan Groff", "C: Brian d'Arcy James", "D: Rory O'Malley"],
+    answer: 2},
+    {
+	question: "Who is the director of Hamilton",
+	multipleChoice: ["A: Lin Manuel Miranda", "B: Thomas Kail", "C: Andrew Lloyd Webber", "D: Daveed Diggs"],
+    answer: 1},
+    {
+	question: "At which theater did Hamilton begin its run on Broadway?",
+	multipleChoice: ["A: Palace Theatre", "B: Shubert Theatre", "C: Richard Rogers Theatre", "D: Nederlander Theatre"],
+	answer: 2}
+];
+
+// These are the messages that appear in between questions and at the end of the game
+
+var resultMessages = {
+	correct: "<h2>Correct</h2><br>Maaaaan, you're nonstop!",
+	incorrect: "<h2>Incorrect!</h2> You can't be serious!",
+	endTime: "Take a note from Hamilton and answer like you're running out of time.... because you ran out of time!",
+	finished: "<BR><h2>Wait for it! Let's see your legacy!</h2>"
 }
-
-
-
 
 // Start Button Coding
 $('#startBtn').on('click', function(){
@@ -124,11 +108,11 @@ function newQuestion(){
 	answered = true;
 	
 	//sets up new questions & answerList
-	$('#currentQuestion').html('<h2>Question #'+(currentQuestion+1)+'/'+triviaQuestions.length + '</h2>');
+	$('#currentQuestion').html('<h2>Question #' + (currentQuestion+1) + '</h2>');
 	$('.question').html('<h3>' + triviaQuestions[currentQuestion].question + '</h3>');
 	for(var i = 0; i < 4; i++){
 		var choices = $('<div>');
-		choices.text(triviaQuestions[currentQuestion].answerList[i]);
+		choices.text(triviaQuestions[currentQuestion].multipleChoice[i]);
 		choices.attr({'data-index': i });
 		choices.addClass('thisChoice');
 		$('.answerList').append(choices);
@@ -148,7 +132,7 @@ function countdown(){
 	seconds = 20;
 	$('#timeLeft').html('<h3>Time Remaining: ' + seconds + '</h3>');
 	answered = true;
-	//sets timer to go down
+	//sets timer to go down in showCountdown function
 	time = setInterval(showCountdown, 1000);
 }
 
@@ -156,7 +140,7 @@ function countdown(){
 function showCountdown(){
 	seconds--;
 	$('#timeLeft').html('<h3>Time Remaining: ' + seconds + '</h3>');
-    // If the timer runs out of time, clear timer, declare wrong answer, run answer page function
+    // If the timer runs out of time, stop timer, declare wrong answer, run answer page function
     if(seconds < 1){
 		clearInterval(time);
 		answered = false;
@@ -171,29 +155,29 @@ function answerPage(){
 	$('.thisChoice').empty(); 
 	$('.question').empty();
 
-
-	var rightAnswerText = triviaQuestions[currentQuestion].answerList[triviaQuestions[currentQuestion].answer];
+	var rightAnswerText = triviaQuestions[currentQuestion].multipleChoice[triviaQuestions[currentQuestion].answer];
 	var rightAnswerIndex = triviaQuestions[currentQuestion].answer;
 	
 	//If User Gets the Answer Correct
 	if((userSelect == rightAnswerIndex) && (answered == true)){
 		correctAnswer++;
-        $('#message').html(messages.correct);
+        $('#message').html(resultMessages.correct);
     // If User Gets the Answer Wrong
 	} else if((userSelect != rightAnswerIndex) && (answered == true)){
 		incorrectAnswer++;
-		$('#message').html(messages.incorrect);
+		$('#message').html(resultMessages.incorrect);
         $('#correctedAnswer').html('The correct answer was:<br> ' + rightAnswerText);
     // If User Runs Out of Time
 	} else{
 		unanswered++;
-		$('#message').html(messages.endTime);
+		$('#message').html(resultMessages.endTime);
 		$('#correctedAnswer').html('The correct answer was:<br> ' + rightAnswerText);
 		answered = true;
 	}
-	
+	// If the current question reaches the end of the trivia list, stop the timer, show the scoreboard
 	if(currentQuestion == (triviaQuestions.length-1)){
-		setTimeout(scoreboard, 5000)
+        setTimeout(scoreboard, 5000)
+    // Otherwise add another question, set new timeout, add new question 
 	} else{
 		currentQuestion++;
 		setTimeout(newQuestion, 5000);
@@ -201,14 +185,14 @@ function answerPage(){
 }
 
 function scoreboard(){
+    // Empties previous information
 	$('#timeLeft').empty();
 	$('#message').empty();
 	$('#correctedAnswer').empty();
-	$('#gif').empty();
 
-	$('#finalMessage').html(messages.finished);
-	$('#correctAnswers').html("Correct Answers: " + correctAnswer);
-	$('#incorrectAnswers').html("Incorrect Answers: " + incorrectAnswer);
+	$('#finalMessage').html(resultMessages.finished);
+	$('#correctAnswers').html("Right: " + correctAnswer);
+	$('#incorrectAnswers').html("Wrong: " + incorrectAnswer);
 	$('#unanswered').html("Unanswered: " + unanswered);
 	$('#startOverBtn').addClass('reset');
 	$('#startOverBtn').show();
