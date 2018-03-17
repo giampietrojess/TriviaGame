@@ -104,7 +104,6 @@ function newGame(){
 function newQuestion(){
 	$('#message').empty();
 	$('#correctedAnswer').empty();
-	$('#gif').empty();
 	answered = true;
 	
 	//sets up new questions & answerList
