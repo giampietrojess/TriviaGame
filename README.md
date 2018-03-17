@@ -5,4 +5,4 @@ JavaScript Assignment #2
 A simple Trivia Game based off the musical, 'Hamilton', as a homework assignment for the UCF Coding Bookcamp.
 
 **Live Game**
-Page hosted: <a href=""></a>
+Page hosted: [Link to live game] https://giampietrojess.github.io/TriviaGame/
